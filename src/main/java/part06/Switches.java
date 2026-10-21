@@ -14,6 +14,75 @@ package part06;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does.
 
+
+
+
+// This class is used to practice switch statements.
 public class Switches {
 
+    // This is where the program starts.
+    public static void main(String[] args) {
+
+        // This stores the day of the week.
+        String day = "Monday";
+
+        // This checks which day was selected.
+        switch (day) {
+
+            // This runs if the day is Sunday.
+            case "Sunday":
+                // This prints a message.
+                System.out.println("It is Sunday.");
+                // This stops the switch.
+                break;
+
+            // This runs if the day is Monday.
+            case "Monday":
+                // This prints a message.
+                System.out.println("It is Monday.");
+                // This stops the switch.
+                break;
+
+            // This runs if the day is Tuesday.
+            case "Tuesday":
+                // This prints a message.
+                System.out.println("It is Tuesday.");
+                // This stops the switch.
+                break;
+
+            // This runs if the day is Wednesday.
+            case "Wednesday":
+                // This prints a message.
+                System.out.println("It is Wednesday.");
+                // This stops the switch.
+                break;
+
+            // This runs if the day is Thursday.
+            case "Thursday":
+                // This prints a message.
+                System.out.println("It is Thursday.");
+                // This stops the switch.
+                break;
+
+            // This runs if the day is Friday.
+            case "Friday":
+                // This prints a message.
+                System.out.println("It is Friday.");
+                // This stops the switch.
+                break;
+
+            // This runs if the day is Saturday.
+            case "Saturday":
+                // This prints a message.
+                System.out.println("It is Saturday.");
+                // This stops the switch.
+                break;
+
+            // This runs if none of the days match.
+            default:
+                // This prints an error message.
+                System.out.println("Invalid day.");
+        }
+    }
 }
+
