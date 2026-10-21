@@ -8,6 +8,25 @@ package part08;
 //
 // There is no main method here yet. Typing it is part of the stretch.
 
+
+
+
 public class Stretch {
 
+    public static void main(String[] args) {
+
+        // Stretch A: Count backward from 10 to 1.
+        for (int i = 10; i >= 1; i--) {
+
+            // Print each number.
+            System.out.println(i);
+        }
+
+        // Stretch B: Count even numbers from 2 to 20.
+        for (int i = 2; i <= 20; i += 2) {
+
+            // Print each even number.
+            System.out.println(i);
+        }
+    }
 }
