@@ -12,6 +12,19 @@ package part06;
 //
 // You need the main method AND the import line. Type both yourself.
 
-public class Warmup {
 
+import java.util.Random;
+
+public class Warmup {
+    public static void main(String[] args) {
+
+        // Create a random number generator
+        Random random = new Random();
+
+        // Roll a die from 1 to 6
+        int dieRoll = random.nextInt(6) + 1;
+
+        // Print the result
+        System.out.println("You rolled: " + dieRoll);
+    }
 }
