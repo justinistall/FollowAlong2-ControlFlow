@@ -6,41 +6,56 @@ package part09;
 // In-class exercise — we do this together in class. Not graded, but commit it.
 // The README (In-class exercise) has the steps.
 
+
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class InClass {
     public static void main(String[] args) {
 
-        // STEP 1 — PLAN the guessing game together. No code yet.
-        // Write each step of the game as a // comment, in plain English, in order.
-        // 1.
-        // 2.
-        // 3.
+        // STEP 1 — PLAN THE GUESSING GAME
 
+        // 1. Pick a random number for the player to guess.
+        // 2. Ask the player to enter a guess.
+        // 3. Keep guessing until the player gets it right.
 
+        // STEP 2 — FIX THE BUGS
 
-        // STEP 2 — fix the bugs. Each bug below is inside its own /* ... */.
-        // Do ONE bug at a time: delete its /* line and its */ line, so Java sees it.
-        // Read the red error (or watch what happens). Fix it. Run it. Then do the next bug.
+        // Create a random number generator
+        Random random = new Random();
 
-        /*
-        Random random = new Random;
+        // Print a random number between 1 and 6
         System.out.println("Random works: " + (random.nextInt(6) + 1));
-        */
 
-        /*
+        // Create Scanner for user input
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Type a number: ");
-        int guess = scanner.nextint();
-        System.out.println("You typed " + guess);
-        */
 
-        /*
+        // Ask the user to type a number
+        System.out.print("Type a number: ");
+
+        // Save the number entered
+        int guess = scanner.nextInt();
+
+        // Print the number entered
+        System.out.println("You typed " + guess);
+
+        // Start the counter at 1
         int count = 1;
+
+        // Repeat the loop three times
         while (count <= 3) {
+
+            // Print the current guess number
             System.out.println("Guess number " + count);
+
+            // Increase the counter to prevent an infinite loop
+            count++;
         }
-        */
+
+        // Close Scanner
+        scanner.close();
     }
 }
+
+
