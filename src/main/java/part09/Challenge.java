@@ -9,28 +9,52 @@ package part09;
 // Each method already has its top line. The inputs are in the parentheses.
 // Replace the line marked YOUR CODE so the method returns the right answer.
 
+
+
+
+
+
 public class Challenge {
 
-    // The price of a movie ticket, in dollars.
-    //   Younger than 5          -> 0  (free)
-    //   65 or older             -> 5
-    //   a student (any other age) -> 7
-    //   everyone else           -> 10
-    // ticketPrice(3, false)  should return 0
-    // ticketPrice(70, true)  should return 5   (age rules come first)
-    // ticketPrice(19, true)  should return 7
-    // ticketPrice(30, false) should return 10
     public static int ticketPrice(int age, boolean student) {
-        return 0;   // YOUR CODE
+        if (age < 5) {
+            return 0;
+        } else if (age >= 65) {
+            return 5;
+        } else if (student) {
+            return 7;
+        } else {
+            return 10;
+        }
     }
 
-    // The letter grade for a score.
-    //   90 or more -> "A"    80 or more -> "B"    70 or more -> "C"
-    //   60 or more -> "D"    anything lower -> "F"
-    // letterGrade(95) should return "A"
-    // letterGrade(80) should return "B"
-    // letterGrade(59) should return "F"
     public static String letterGrade(int score) {
-        return "";   // YOUR CODE
+        if (score >= 90) {
+            return "A";
+        } else if (score >= 80) {
+            return "B";
+        } else if (score >= 70) {
+            return "C";
+        } else if (score >= 60) {
+            return "D";
+        } else {
+            return "F";
+        }
+    }
+
+    public static void main(String[] args) {
+
+        // Test movie ticket prices
+        System.out.println("Child ticket: $" + ticketPrice(4, false));
+        System.out.println("Student ticket: $" + ticketPrice(19, true));
+        System.out.println("Adult ticket: $" + ticketPrice(30, false));
+        System.out.println("Senior ticket: $" + ticketPrice(70, false));
+
+        // Test letter grades
+        System.out.println("Grade for 95: " + letterGrade(95));
+        System.out.println("Grade for 85: " + letterGrade(85));
+        System.out.println("Grade for 75: " + letterGrade(75));
+        System.out.println("Grade for 65: " + letterGrade(65));
+        System.out.println("Grade for 50: " + letterGrade(50));
     }
 }
