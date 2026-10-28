@@ -10,6 +10,25 @@ package part09;
 //
 // You will need to type the main method yourself. That is the point.
 
+
+
 public class Warmup {
 
+    // Start the program
+    public static void main(String[] args) {
+
+        // Start the countdown at 10
+        int count = 10;
+
+        // Keep counting down until zero
+        for (int i = count; i >= 0; i--) {
+
+            // Print the countdown number
+            System.out.println(i);
+        }
+
+        // Print when the countdown finishes
+        System.out.println("Liftoff!");
+    }
 }
+
