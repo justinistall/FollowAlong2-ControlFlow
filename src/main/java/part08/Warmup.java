@@ -10,6 +10,40 @@ package part08;
 //
 // You will need to type the main method yourself. That is the point.
 
+
+
 public class Warmup {
 
+    // Start the program
+    public static void main(String[] args) {
+
+        // Set the starting number
+        int number = 1;
+
+        // Keep looping until number reaches 5
+        while (number <= 5) {
+
+            // Print the current number
+            System.out.println(number);
+
+            // Add 1 to the number
+            number++;
+        }
+
+        // Set the countdown number
+        int count = 5;
+
+        // Repeat while count is greater than 0
+        while (count > 0) {
+
+            // Print the countdown
+            System.out.println("Countdown: " + count);
+
+            // Subtract 1
+            count--;
+        }
+
+        // Print when countdown finishes
+        System.out.println("Done!");
+    }
 }
